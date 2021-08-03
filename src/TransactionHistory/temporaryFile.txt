@@ -1,0 +1,4 @@
+Account: savings starter package 4418075591  Bank: Nubank AG
+Bank extract as of Wed Jul 21 10:49:50 CEST 2021
+Wed Jul 21 10:49:36 CEST 2021 : € 11.00 : Transfer from account 3377565365: Nubank AG to account 4418075591: Nubank AG
+Balance: €11.0

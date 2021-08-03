@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<GridPane fx:id="mainPane" alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ATM.Controller">
+    <columnConstraints>
+        <ColumnConstraints />
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints />
+    </rowConstraints>
+    <Pane prefHeight="600.0" prefWidth="800.0">
+        <Button layoutX="82.0" layoutY="110.0" mnemonicParsing="false" onMouseClicked="#onLoginClick" prefHeight="39.0" prefWidth="95.0" text="Login" />
+        <Button layoutX="24.0" layoutY="547.0" mnemonicParsing="false" onMouseClicked="#onLogoutClick" prefHeight="39.0" prefWidth="116.0" text="Logout" />
+        <ListView fx:id="transactionHistory" layoutX="400.0" layoutY="53.0" prefHeight="470.0" prefWidth="372.0" />
+        <Button layoutX="82.0" layoutY="276.0" mnemonicParsing="false" onMouseClicked="#onAddAccClick" prefHeight="39.0" prefWidth="225.0" text="Add Account" />
+        <Button layoutX="82.0" layoutY="323.0" mnemonicParsing="false" onMouseClicked="#onChangeAccClick" prefHeight="39.0" prefWidth="225.0" text="Change account" />
+        <Button layoutX="82.0" layoutY="370.0" mnemonicParsing="false" onMouseClicked="#onDepositClick" prefHeight="39.0" prefWidth="225.0" text="Deposit" />
+        <Button layoutX="82.0" layoutY="417.0" mnemonicParsing="false" onMouseClicked="#onWithdrawClick" prefHeight="39.0" prefWidth="225.0" text="Withdraw" />
+        <Button layoutX="82.0" layoutY="463.0" mnemonicParsing="false" onMouseClicked="#onTransferClick" prefHeight="39.0" prefWidth="225.0" text="Transfer" />
+        <Label fx:id="accountTextField" layoutX="400.0" layoutY="10.0" prefHeight="39.0" prefWidth="372.0" text="Account number: " />
+        <Label fx:id="balanceLabel" layoutX="400.0" layoutY="536.0" prefHeight="39.0" prefWidth="372.0" text="Saldo: " />
+        <Label fx:id="welcomeText" alignment="TOP_CENTER" contentDisplay="CENTER" layoutX="42.0" layoutY="157.0" prefHeight="104.0" prefWidth="305.0" text="Welcome! To start, please log in." textAlignment="JUSTIFY" wrapText="true">
+            <font>
+                <Font name="SimSun" size="24.0" />
+            </font>
+        </Label>
+      <Button layoutX="212.0" layoutY="110.0" mnemonicParsing="false" onMouseClicked="#onNewUserClick" prefHeight="39.0" prefWidth="95.0" text="New User" />
+      <Button layoutX="82.0" layoutY="63.0" mnemonicParsing="false" onMouseClicked="#changeBankClick" prefHeight="39.0" prefWidth="225.0" text="Choose your bank" />
+      <Label fx:id="bankName" alignment="CENTER" layoutX="14.0" layoutY="10.0" prefHeight="39.0" prefWidth="362.0" text="ATM">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Button layoutX="249.0" layoutY="547.0" mnemonicParsing="false" onMouseClicked="#print" prefHeight="39.0" prefWidth="116.0" text="Print" />
+    </Pane>
+</GridPane>

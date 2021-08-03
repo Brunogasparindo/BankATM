@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<DialogPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="ATM.DestinationUserDialog"
+            prefHeight="400.0" prefWidth="600.0">
+
+    <headerText>
+        Choose the destination account holder.
+    </headerText>
+    <content>
+        <GridPane vgap="10" hgap="10">
+            <Label text="UserID from the destination account holder: " GridPane.rowIndex="1" GridPane.columnIndex="0"/>
+            <TextField fx:id="destinationUserID" GridPane.rowIndex="1" GridPane.columnIndex="1"/>
+        </GridPane>
+    </content>
+
+</DialogPane>

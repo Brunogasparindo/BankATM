@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+
+<?import javafx.scene.layout.GridPane?>
+<DialogPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="ATM.LoginController"
+            prefHeight="250.0" prefWidth="400.0">
+
+    <headerText>
+        Please login using your User ID
+    </headerText>
+    <content>
+        <GridPane vgap="10" hgap="10">
+            <Label text="User ID: " GridPane.rowIndex="0" GridPane.columnIndex="0"/>
+            <TextField fx:id="userId" GridPane.rowIndex="0" GridPane.columnIndex="1"/>
+
+
+            <Label text="Pin: " GridPane.rowIndex="1" GridPane.columnIndex="0"/>
+            <TextField fx:id="pin" GridPane.rowIndex="1" GridPane.columnIndex="1"/>
+        </GridPane>
+    </content>
+
+</DialogPane>

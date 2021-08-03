@@ -1,0 +1,20 @@
+
+        getAccountInformation();
+        uuidAccounts.clear();
+        for (Account account : currentUser.getAccounts())
+        {
+            uuidAccounts.add(account.getUUID());
+        }
+//        Text text = new Text("Your are using the " + currentAccInfo);
+//        text.setFont(Font.font("Verdana", FontWeight.BOLD, 70));
+
+
+    private void getAccountInformation()
+    {
+        currentAccInfo = "account " + currentAccount.getAccountName() + ": " +
+                currentAccount.getUUID() + ". \nBank:  " + authBank.getName();
+    }
+
+
+
+    public static ObservableList<String> accObservableList = FXCollections.observableList(Controller.uuidAccounts);
